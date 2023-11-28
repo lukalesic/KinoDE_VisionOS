@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192932192B1600F200C248A1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192932182B1600F200C248A1 /* DetailView.swift */; };
 		DF2AF41A2B15E3F40031C819 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF2AF4192B15E3F40031C819 /* RealityKitContent */; };
 		DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */; };
 		DF2AF4202B15E3F40031C819 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192932182B1600F200C248A1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DF2AF4142B15E3F40031C819 /* KinoVisionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoVisionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2AF4182B15E3F40031C819 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoVisionTestApp.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				DF2AF4322B15F0C90031C819 /* ContentView.swift */,
 				DF2AF4342B15F1CF0031C819 /* ComingSoonView.swift */,
 				DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */,
+				192932182B1600F200C248A1 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				DF2AF4372B15F1D70031C819 /* WhatToWatchView.swift in Sources */,
 				DF2AF4392B15F3350031C819 /* Category.swift in Sources */,
 				DF2AF4332B15F0C90031C819 /* ContentView.swift in Sources */,
+				192932192B1600F200C248A1 /* DetailView.swift in Sources */,
 				DF2AF4402B15F3C10031C819 /* ComingSoonRepository.swift in Sources */,
 				DF2AF43E2B15F3B50031C819 /* Repository.swift in Sources */,
 				DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */,
