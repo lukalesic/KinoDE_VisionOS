@@ -37,17 +37,20 @@ private extension MoviesView {
     func movieGrid() -> some View {
         LazyVGrid(columns: columns, content: {
             ForEach(viewModel.movies, id: \.title) { movie in
-                VStack {
-                    AsyncImage(url: URL(string: movie.posterURL)) { phase in
-                        phase
-                            .image?
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 200, height: 250, alignment: .center)
+                NavigationLink(destination: DetailView(movie: movie)) {
+                    VStack {
+                        AsyncImage(url: URL(string: movie.posterURL)) { phase in
+                            phase
+                                .image?
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200, height: 250, alignment: .center)
+                        }
+                        Text(movie.title)
+                            .lineLimit(1)
                     }
-                    Text(movie.title)
-                        .lineLimit(1)
                 }
+                .buttonStyle(.plain)
                 .padding()
             }
         })
