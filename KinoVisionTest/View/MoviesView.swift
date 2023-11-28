@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MoviesView: View {
-    @State private var viewModel = MoviesViewModel()
+    @Environment(MoviesViewModel.self) private var viewModel: MoviesViewModel
     var columns: [GridItem] = [.init(.adaptive(minimum: 300), spacing: 20)]
     var dataType: DataType
     
@@ -17,18 +17,36 @@ struct MoviesView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
-                movieGrid()
-                    .padding()
-            }
-            .onAppear {
-                Task {
-                    await viewModel.getMovies(for: dataType)
+        ZStack {
+            Color.clear
+                .onLoad {
+                    Task {
+                        await viewModel.getAllCategories()
+                        await viewModel.filterCategory(for: dataType)
+                    }
                 }
+                .onAppear {
+                    Task {
+                        await viewModel.filterCategory(for: dataType)
+                    }
+                }
+            
+            switch viewModel.dataState {
+            case .loading:
+                Text("Loading")
+                
+            case .loaded:
+                ScrollView {
+                    VStack {
+                        movieGrid()
+                            .padding()
+                            .navigationTitle(dataType.rawValue)
+                    }
+                }
+            default:
+                ProgressView()
             }
         }
-        .navigationTitle(dataType.rawValue)
     }
 }
 

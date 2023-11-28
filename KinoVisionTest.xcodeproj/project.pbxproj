@@ -20,6 +20,7 @@
 		DF2AF4402B15F3C10031C819 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43F2B15F3C10031C819 /* MoviesRepository.swift */; };
 		DF2AF4422B1648A50031C819 /* OnStreamingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4412B1648A50031C819 /* OnStreamingViewModel.swift */; };
 		DF2AF4442B1658070031C819 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4432B1658070031C819 /* DetailView.swift */; };
+		DF2AF4462B16801A0031C819 /* onLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4452B1680190031C819 /* onLoadModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DF2AF43F2B15F3C10031C819 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		DF2AF4412B1648A50031C819 /* OnStreamingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnStreamingViewModel.swift; sourceTree = "<group>"; };
 		DF2AF4432B1658070031C819 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = KinoVisionTest/View/DetailView.swift; sourceTree = SOURCE_ROOT; };
+		DF2AF4452B1680190031C819 /* onLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onLoadModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DF2AF4212B15E3F60031C819 /* Assets.xcassets */,
 				DF2AF4262B15E3F60031C819 /* Info.plist */,
 				DF2AF4232B15E3F60031C819 /* Preview Content */,
+				DF2AF4452B1680190031C819 /* onLoadModifier.swift */,
 			);
 			path = KinoVisionTest;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				DF2AF4402B15F3C10031C819 /* MoviesRepository.swift in Sources */,
 				DF2AF4442B1658070031C819 /* DetailView.swift in Sources */,
 				DF2AF4422B1648A50031C819 /* OnStreamingViewModel.swift in Sources */,
+				DF2AF4462B16801A0031C819 /* onLoadModifier.swift in Sources */,
 				DF2AF43E2B15F3B50031C819 /* Repository.swift in Sources */,
 				DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */,
 				DF2AF4352B15F1CF0031C819 /* MoviesView.swift in Sources */,

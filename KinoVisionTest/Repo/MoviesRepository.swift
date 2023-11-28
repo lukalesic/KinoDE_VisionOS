@@ -11,11 +11,11 @@ enum NetworkError: String, Error {
     case notAvailable = "Content not available"
 }
 
-enum DataType: String {
-    case comingSoon = "Coming Soon"
-    case onStreaming = "On Streaming"
+enum DataType: String, CaseIterable {
+    case comingSoon = "Coming soon"
+    case onStreaming = "Movies on Streaming"
     case newInCinemas = "New in Cinemas"
-    case latestOnNetflix = "Latest on Netflix"
+    case latestOnNetflix = "TV shows on Streaming"
     
     var link: String {
         switch self {
@@ -42,7 +42,26 @@ class MoviesRepository: Repository {
     init() {
     }
     
-    func fetchData(for type: DataType) async throws -> Category {
+    func fetchAllData() async throws -> [Category] {
+        let taskCategories = try await withThrowingTaskGroup(
+            of: Category.self,
+            returning: [Category]?.self
+        ) { taskGroup in
+            
+            for category in DataType.allCases {
+                taskGroup.addTask {
+                    try await self.fetchCategory(for: category)
+                }
+            }
+            let categories = try await taskGroup.reduce(into: [Category]()) { partialResult, response in
+                          partialResult.append(response)
+                      }
+            return categories
+        }
+        return taskCategories!
+    }
+    
+    func fetchCategory(for type: DataType) async throws -> Category {
         guard let url = URL(string: type.link) else {
             throw fatalError()
         }
