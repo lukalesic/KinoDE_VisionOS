@@ -10,7 +10,7 @@ import Foundation
 struct Category: Codable {
     let next, type, title, posterSize: String
     let subtitleType: String
-    let categoryOrder: Int
+    let categoryOrder: Int?
     let results: [Movie]
 
     enum CodingKeys: String, CodingKey {
@@ -48,13 +48,14 @@ struct Movie: Codable {
 
 enum ItemType: String, Codable {
     case movie = "movie"
+    case tvShow = "tvshow"
 }
 
 struct Ratings: Codable {
     let popularity: Double
     let imdbID, imdbRating: String?
     let watchlistCount, starsCount: Int?
-    let starsAverage: Int?
+    let starsAverage: String?
 
     enum CodingKeys: String, CodingKey {
         case popularity

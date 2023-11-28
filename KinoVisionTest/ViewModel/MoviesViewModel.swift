@@ -9,19 +9,18 @@ import Foundation
 import Observation
 
 @Observable
-class ComingSoonViewModel {
+class MoviesViewModel {
     var movies: [Movie] = []
-    let repo = ComingSoonRepository()
-    
-    func getMovies() async {
+    let repo = MoviesRepository()
+
+    func getMovies(for type: DataType) async {
         Task {
             do {
-               let data = try await repo.fetchData()
+                let data = try await repo.fetchData(for: type)
                 self.movies = data.results
             } catch {
                 print("error")
             }
-           // self.movies = data?.results
         }
     }
 

@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		192932192B1600F200C248A1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192932182B1600F200C248A1 /* DetailView.swift */; };
 		DF2AF41A2B15E3F40031C819 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF2AF4192B15E3F40031C819 /* RealityKitContent */; };
 		DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */; };
 		DF2AF4202B15E3F40031C819 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */; };
 		DF2AF4222B15E3F60031C819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2AF4212B15E3F60031C819 /* Assets.xcassets */; };
 		DF2AF4252B15E3F60031C819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2AF4242B15E3F60031C819 /* Preview Assets.xcassets */; };
 		DF2AF4332B15F0C90031C819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4322B15F0C90031C819 /* ContentView.swift */; };
-		DF2AF4352B15F1CF0031C819 /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4342B15F1CF0031C819 /* ComingSoonView.swift */; };
-		DF2AF4372B15F1D70031C819 /* WhatToWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */; };
+		DF2AF4352B15F1CF0031C819 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4342B15F1CF0031C819 /* MoviesView.swift */; };
 		DF2AF4392B15F3350031C819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4382B15F3350031C819 /* Category.swift */; };
-		DF2AF43B2B15F3AB0031C819 /* ComingSoonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43A2B15F3AB0031C819 /* ComingSoonViewModel.swift */; };
+		DF2AF43B2B15F3AB0031C819 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43A2B15F3AB0031C819 /* MoviesViewModel.swift */; };
 		DF2AF43E2B15F3B50031C819 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43D2B15F3B50031C819 /* Repository.swift */; };
-		DF2AF4402B15F3C10031C819 /* ComingSoonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43F2B15F3C10031C819 /* ComingSoonRepository.swift */; };
+		DF2AF4402B15F3C10031C819 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF43F2B15F3C10031C819 /* MoviesRepository.swift */; };
+		DF2AF4422B1648A50031C819 /* OnStreamingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4412B1648A50031C819 /* OnStreamingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		192932182B1600F200C248A1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DF2AF4142B15E3F40031C819 /* KinoVisionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoVisionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2AF4182B15E3F40031C819 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoVisionTestApp.swift; sourceTree = "<group>"; };
@@ -32,12 +30,12 @@
 		DF2AF4242B15E3F60031C819 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF2AF4262B15E3F60031C819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2AF4322B15F0C90031C819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DF2AF4342B15F1CF0031C819 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
-		DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatchView.swift; sourceTree = "<group>"; };
+		DF2AF4342B15F1CF0031C819 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		DF2AF4382B15F3350031C819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		DF2AF43A2B15F3AB0031C819 /* ComingSoonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewModel.swift; sourceTree = "<group>"; };
+		DF2AF43A2B15F3AB0031C819 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
 		DF2AF43D2B15F3B50031C819 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		DF2AF43F2B15F3C10031C819 /* ComingSoonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRepository.swift; sourceTree = "<group>"; };
+		DF2AF43F2B15F3C10031C819 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		DF2AF4412B1648A50031C819 /* OnStreamingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnStreamingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +111,7 @@
 			children = (
 				DF2AF42F2B15EA0C0031C819 /* Immersive */,
 				DF2AF4322B15F0C90031C819 /* ContentView.swift */,
-				DF2AF4342B15F1CF0031C819 /* ComingSoonView.swift */,
-				DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */,
-				192932182B1600F200C248A1 /* DetailView.swift */,
+				DF2AF4342B15F1CF0031C819 /* MoviesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,7 +119,8 @@
 		DF2AF42E2B15EA040031C819 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DF2AF43A2B15F3AB0031C819 /* ComingSoonViewModel.swift */,
+				DF2AF43A2B15F3AB0031C819 /* MoviesViewModel.swift */,
+				DF2AF4412B1648A50031C819 /* OnStreamingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DF2AF43D2B15F3B50031C819 /* Repository.swift */,
-				DF2AF43F2B15F3C10031C819 /* ComingSoonRepository.swift */,
+				DF2AF43F2B15F3C10031C819 /* MoviesRepository.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -218,15 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2AF4372B15F1D70031C819 /* WhatToWatchView.swift in Sources */,
 				DF2AF4392B15F3350031C819 /* Category.swift in Sources */,
 				DF2AF4332B15F0C90031C819 /* ContentView.swift in Sources */,
-				192932192B1600F200C248A1 /* DetailView.swift in Sources */,
-				DF2AF4402B15F3C10031C819 /* ComingSoonRepository.swift in Sources */,
+				DF2AF4402B15F3C10031C819 /* MoviesRepository.swift in Sources */,
+				DF2AF4422B1648A50031C819 /* OnStreamingViewModel.swift in Sources */,
 				DF2AF43E2B15F3B50031C819 /* Repository.swift in Sources */,
 				DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */,
-				DF2AF4352B15F1CF0031C819 /* ComingSoonView.swift in Sources */,
-				DF2AF43B2B15F3AB0031C819 /* ComingSoonViewModel.swift in Sources */,
+				DF2AF4352B15F1CF0031C819 /* MoviesView.swift in Sources */,
+				DF2AF43B2B15F3AB0031C819 /* MoviesViewModel.swift in Sources */,
 				DF2AF4202B15E3F40031C819 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
