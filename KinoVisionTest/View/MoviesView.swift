@@ -43,6 +43,8 @@ private extension MoviesView {
                             .image?
                             .resizable()
                             .scaledToFit()
+                            .cornerRadius(9)
+                            .shadow(radius: 14)
                             .frame(width: 200, height: 250, alignment: .center)
                     }
                     Text(movie.title)
