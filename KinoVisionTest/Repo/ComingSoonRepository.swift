@@ -7,22 +7,34 @@
 
 import Foundation
 
+@Observable
 class ComingSoonRepository: Repository {
     
     static let comingSoonLink = "http://kino-api.smbapps.cf/api/coming_soon/"
     
-    func fetchData() {
-        guard let url = URL(string: Self.comingSoonLink) else { return }
+    init() {
         
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _ , error in
-            guard let data = data, error == nil else { print("ERR"); return }
+    }
     
-            do {
-                let result = try JSONDecoder().decode(BaseItem.self, from: data)
-            } catch {
-                print(error)
-            }
+    func fetchData() async throws -> Category {
+        guard let url = URL(string: Self.comingSoonLink) else {
+            throw fatalError()
         }
-        task.resume()
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response , error in
+                guard let data = data, error == nil, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(Category.self, from: data)
+                    continuation.resume(returning: result)
+                } catch {
+                    print(error)
+                }
+            }
+            task.resume()
+        }
     }
 }
