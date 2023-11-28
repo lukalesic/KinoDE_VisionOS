@@ -10,7 +10,7 @@ import Foundation
 struct Category: Codable {
     let next, type, title, posterSize: String
     let subtitleType: String
-    let categoryOrder: Int
+    let categoryOrder: Int?
     let results: [Movie]
 
     enum CodingKeys: String, CodingKey {
