@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F12009E3-8256-4906-B2CA-A485AD67862B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "KinoVisionTest/Repo/ComingSoonRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "fetchData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6F399039-945E-4900-A34C-EEFBE1D37DB1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -46,8 +30,8 @@
             filePath = "KinoVisionTest/Repo/ComingSoonRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,42 +46,10 @@
             filePath = "KinoVisionTest/Repo/ComingSoonRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "fetchData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "96F9A17F-D7BA-4463-B7E7-52B5AC3991A8 - 531aa2d36313c76b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in KinoVisionTest.ComingSoonRepository.fetchData() -&gt; ()"
-                  moduleName = "KinoVisionTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionTest/KinoVisionTest/KinoVisionTest/Repo/ComingSoonRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "876">
-               </Location>
-               <Location
-                  uuid = "96F9A17F-D7BA-4463-B7E7-52B5AC3991A8 - 531aa2d36313c76b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in KinoVisionTest.ComingSoonRepository.fetchData() -&gt; ()"
-                  moduleName = "KinoVisionTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionTest/KinoVisionTest/KinoVisionTest/Repo/ComingSoonRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1044">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

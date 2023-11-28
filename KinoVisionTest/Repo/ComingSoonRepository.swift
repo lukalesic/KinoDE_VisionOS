@@ -18,8 +18,7 @@ class ComingSoonRepository: Repository {
             guard let data = data, error == nil else { print("ERR"); return }
     
             do {
-                let result = try JSONDecoder().decode([BaseItem].self, from: data)
-                print(result.first)
+                let result = try JSONDecoder().decode(BaseItem.self, from: data)
             } catch {
                 print(error)
             }
