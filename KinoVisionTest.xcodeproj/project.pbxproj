@@ -58,9 +58,10 @@
 		DF2AF4162B15E3F40031C819 /* KinoVisionTest */ = {
 			isa = PBXGroup;
 			children = (
+				DF2AF42E2B15EA040031C819 /* ViewModel */,
+				DF2AF42D2B15E9FB0031C819 /* View */,
+				DF2AF42C2B15E9F50031C819 /* Model */,
 				DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */,
-				DF2AF41D2B15E3F40031C819 /* ContentView.swift */,
-				DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */,
 				DF2AF4212B15E3F60031C819 /* Assets.xcassets */,
 				DF2AF4262B15E3F60031C819 /* Info.plist */,
 				DF2AF4232B15E3F60031C819 /* Preview Content */,
@@ -82,6 +83,37 @@
 				DF2AF4242B15E3F60031C819 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF2AF42C2B15E9F50031C819 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF2AF42D2B15E9FB0031C819 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF2AF41D2B15E3F40031C819 /* ContentView.swift */,
+				DF2AF42F2B15EA0C0031C819 /* Immersive */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF2AF42E2B15EA040031C819 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF2AF42F2B15EA0C0031C819 /* Immersive */ = {
+			isa = PBXGroup;
+			children = (
+				DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */,
+			);
+			path = Immersive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
