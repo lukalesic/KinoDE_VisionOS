@@ -10,15 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ForYouView()
+            ComingSoonView()
                 .tabItem {
-                    Label("For you", systemImage: "star")
+                    Label("Coming Soon", systemImage: "star")
                 }
             WhatToWatchView()
                 .tabItem {
                     Label("What to watch", systemImage: "play.circle")
-                }
-        }    }
+            }
+        }
+    }
 }
 
 #Preview {
