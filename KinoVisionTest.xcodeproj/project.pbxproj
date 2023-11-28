@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DF2AF41A2B15E3F40031C819 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF2AF4192B15E3F40031C819 /* RealityKitContent */; };
 		DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */; };
-		DF2AF41E2B15E3F40031C819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41D2B15E3F40031C819 /* ContentView.swift */; };
 		DF2AF4202B15E3F40031C819 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */; };
 		DF2AF4222B15E3F60031C819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2AF4212B15E3F60031C819 /* Assets.xcassets */; };
 		DF2AF4252B15E3F60031C819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2AF4242B15E3F60031C819 /* Preview Assets.xcassets */; };
+		DF2AF4332B15F0C90031C819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4322B15F0C90031C819 /* ContentView.swift */; };
+		DF2AF4352B15F1CF0031C819 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4342B15F1CF0031C819 /* ForYouView.swift */; };
+		DF2AF4372B15F1D70031C819 /* WhatToWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF2AF4142B15E3F40031C819 /* KinoVisionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoVisionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2AF4182B15E3F40031C819 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF2AF41B2B15E3F40031C819 /* KinoVisionTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoVisionTestApp.swift; sourceTree = "<group>"; };
-		DF2AF41D2B15E3F40031C819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF2AF41F2B15E3F40031C819 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		DF2AF4212B15E3F60031C819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2AF4242B15E3F60031C819 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF2AF4262B15E3F60031C819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2AF4322B15F0C90031C819 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF2AF4342B15F1CF0031C819 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
+		DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 		DF2AF42D2B15E9FB0031C819 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DF2AF41D2B15E3F40031C819 /* ContentView.swift */,
 				DF2AF42F2B15EA0C0031C819 /* Immersive */,
+				DF2AF4322B15F0C90031C819 /* ContentView.swift */,
+				DF2AF4342B15F1CF0031C819 /* ForYouView.swift */,
+				DF2AF4362B15F1D70031C819 /* WhatToWatchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2AF41E2B15E3F40031C819 /* ContentView.swift in Sources */,
+				DF2AF4372B15F1D70031C819 /* WhatToWatchView.swift in Sources */,
+				DF2AF4332B15F0C90031C819 /* ContentView.swift in Sources */,
 				DF2AF41C2B15E3F40031C819 /* KinoVisionTestApp.swift in Sources */,
+				DF2AF4352B15F1CF0031C819 /* ForYouView.swift in Sources */,
 				DF2AF4202B15E3F40031C819 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
