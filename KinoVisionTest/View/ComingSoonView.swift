@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ComingSoonView: View {
+    let repo = ComingSoonRepository()
     var body: some View {
         Text("Hello, Coming soon!")
+            .onAppear {
+                repo.fetchData()
+            }
     }
 }
 

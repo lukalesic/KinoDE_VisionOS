@@ -14,14 +14,16 @@ class ComingSoonRepository: Repository {
     func fetchData() {
         guard let url = URL(string: Self.comingSoonLink) else { return }
         
-        let task = URLSession.shared.dataTask(with: url) { data, _ , error in
-            guard let data = data, error != nil else { return }
-            
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _ , error in
+            guard let data = data, error == nil else { print("ERR"); return }
+    
             do {
                 let result = try JSONDecoder().decode([BaseItem].self, from: data)
+                print(result.first)
             } catch {
                 print(error)
             }
         }
+        task.resume()
     }
 }
