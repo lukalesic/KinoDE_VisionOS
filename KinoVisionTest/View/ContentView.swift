@@ -10,18 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ComingSoonView()
-                .tabItem {
-                    Label("Coming Soon", systemImage: "star")
-                }
-            WhatToWatchView()
-                .tabItem {
-                    Label("What to watch", systemImage: "play.circle")
+            NavigationStack {
+                MoviesView(dataType: .comingSoon)
+            }
+            .tabItem {
+                Label("Coming Soon", systemImage: "star")
+            }
+            
+            NavigationStack {
+                MoviesView(dataType: .onStreaming)
+            }
+            .tabItem {
+                Label("On Streaming", systemImage: "play.circle")
+            }
+            
+            NavigationStack {
+                MoviesView(dataType: .newInCinemas)
+            }
+            .tabItem {
+                Label("New In Cinemas", systemImage: "popcorn.fill")
+            }
+            
+            NavigationStack {
+                MoviesView(dataType: .latestOnNetflix)
+            }
+            .tabItem {
+                Label("Latest on Netflix", systemImage: "movieclapper")
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

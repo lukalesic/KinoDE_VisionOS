@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct ComingSoonView: View {
-    @State private var viewModel = ComingSoonViewModel()
-    var columns: [GridItem] = [.init(.adaptive(minimum: 200), spacing: 20)]
+struct MoviesView: View {
+    @State private var viewModel = MoviesViewModel()
+    var columns: [GridItem] = [.init(.adaptive(minimum: 300), spacing: 20)]
+    var dataType: DataType
+    
+    init(dataType: DataType) {
+        self.dataType = dataType
+    }
     
     var body: some View {
         ScrollView {
@@ -19,14 +24,15 @@ struct ComingSoonView: View {
             }
             .onAppear {
                 Task {
-                    await viewModel.getMovies()
+                    await viewModel.getMovies(for: dataType)
                 }
             }
         }
+        .navigationTitle(dataType.rawValue)
     }
 }
 
-private extension ComingSoonView {
+private extension MoviesView {
     @ViewBuilder
     func movieGrid() -> some View {
         LazyVGrid(columns: columns, content: {
@@ -37,10 +43,12 @@ private extension ComingSoonView {
                             .image?
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 130, height: 200, alignment: .center)
+                            .frame(width: 200, height: 250, alignment: .center)
                     }
                     Text(movie.title)
+                        .lineLimit(1)
                 }
+                .padding()
             }
         })
     }
