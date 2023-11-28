@@ -14,6 +14,8 @@ enum NetworkError: String, Error {
 enum DataType: String {
     case comingSoon = "Coming Soon"
     case onStreaming = "On Streaming"
+    case newInCinemas = "New in Cinemas"
+    case latestOnNetflix = "Latest on Netflix"
     
     var link: String {
         switch self {
@@ -21,6 +23,10 @@ enum DataType: String {
             return MoviesRepository.comingSoonLink
         case .onStreaming:
             return MoviesRepository.onStreamingLink
+        case .newInCinemas:
+            return MoviesRepository.newInCinemasLink
+        case .latestOnNetflix:
+            return MoviesRepository.latestOnNetflixLink
         }
     }
 }
@@ -30,9 +36,10 @@ class MoviesRepository: Repository {
     
     static let comingSoonLink = "http://kino-api.smbapps.cf/api/coming_soon/"
     static let onStreamingLink = "http://kino-api.smbapps.cf/api/streaming/movies/?&sort_by=newest"
+    static let newInCinemasLink = "https://kino-api.smbapps.cf/api/cinemas/?&latitude=51.3202&longitude=9.49362&radius=1.0&sort_by=newest"
+    static let latestOnNetflixLink = "http://kino-api.smbapps.cf/api/streaming/tvshows/?&sort_by=newest&services=1"
 
     init() {
-        
     }
     
     func fetchData(for type: DataType) async throws -> Category {

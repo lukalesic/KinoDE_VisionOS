@@ -13,20 +13,30 @@ struct ContentView: View {
             NavigationStack {
                 MoviesView(dataType: .comingSoon)
             }
-                .tabItem {
-                    Label("Coming Soon", systemImage: "star")
-                }
+            .tabItem {
+                Label("Coming Soon", systemImage: "star")
+            }
             
             NavigationStack {
                 MoviesView(dataType: .onStreaming)
             }
-                .tabItem {
-                    Label("On Streaming", systemImage: "play.circle")
+            .tabItem {
+                Label("On Streaming", systemImage: "play.circle")
+            }
+            
+            NavigationStack {
+                MoviesView(dataType: .newInCinemas)
+            }
+            .tabItem {
+                Label("New In Cinemas", systemImage: "popcorn.fill")
+            }
+            
+            NavigationStack {
+                MoviesView(dataType: .latestOnNetflix)
+            }
+            .tabItem {
+                Label("Latest on Netflix", systemImage: "movieclapper")
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
