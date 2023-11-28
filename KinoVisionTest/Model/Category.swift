@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct BaseItem: Codable {
+struct Category: Codable {
     let next, type, title, posterSize: String
     let subtitleType: String
     let categoryOrder: Int
-    let results: [Result]
+    let results: [Movie]
 
     enum CodingKeys: String, CodingKey {
         case next, type, title
@@ -22,7 +22,7 @@ struct BaseItem: Codable {
     }
 }
 
-struct Result: Codable {
+struct Movie: Codable {
     let path: String
     let itemType: ItemType
     let id: Int
