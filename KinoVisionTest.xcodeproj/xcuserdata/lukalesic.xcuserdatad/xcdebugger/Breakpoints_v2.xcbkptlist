@@ -14,8 +14,8 @@
             filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "fetchCategory(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "fetchCategory(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,6 +254,102 @@
                   startingLineNumber = "24"
                   endingLineNumber = "24"
                   offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "fetchIndividualContent(for:id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED - a3534e56971cb951"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1132">
+               </Location>
+               <Location
+                  uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED - a3534e56971cb951"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "624">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "fetchIndividualContent(for:id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5 - a3534e56971cbad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2280">
+               </Location>
+               <Location
+                  uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5 - a3534e56971cbad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2424">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -11,6 +11,20 @@ enum NetworkError: String, Error {
     case notAvailable = "Content not available"
 }
 
+enum MediaType: String {
+    case movie = "Movie"
+    case tvShow = "tvShow"
+    
+    var baselink: URL {
+        switch self {
+        case .movie:
+            URL(string: MoviesRepository.baseMovieLink)!
+        case .tvShow:
+            URL(string: MoviesRepository.baseTVShowLink)!
+        }
+    }
+}
+
 enum DataType: String, CaseIterable {
     case comingSoon = "Coming soon"
     case onStreaming = "Movies on Streaming"
@@ -38,6 +52,8 @@ class MoviesRepository: Repository {
     static let onStreamingLink = "http://kino-api.smbapps.cf/api/streaming/movies/?&sort_by=newest"
     static let newInCinemasLink = "https://kino-api.smbapps.cf/api/cinemas/?&latitude=51.3202&longitude=9.49362&radius=1.0&sort_by=newest"
     static let latestOnNetflixLink = "http://kino-api.smbapps.cf/api/streaming/tvshows/?&sort_by=newest&services=1"
+    static let baseMovieLink = "http://kino-api.smbapps.cf/api/movies/"
+    static let baseTVShowLink = "http://kino-api.smbapps.cf/api/tvshows/"
 
     init() {
     }
@@ -74,6 +90,31 @@ class MoviesRepository: Repository {
                 
                 do {
                     let result = try JSONDecoder().decode(Category.self, from: data)
+                    continuation.resume(returning: result)
+                } catch {
+                    print(error)
+                    continuation.resume(throwing: NetworkError.notAvailable)
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    func fetchIndividualContent(for type: MediaType, id: Int) async throws -> Movie {
+        guard let url = URL(string: "\(type.baselink)\(id)") else { throw NetworkError.notAvailable }
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+                guard let data = data, error == nil, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                    print("ne more")
+                    print(url)
+                    continuation.resume(throwing: NetworkError.notAvailable)
+                    return
+                }
+                
+                do {
+                    let result = try JSONDecoder().decode(Movie.self, from: data)
+                    print("summary ucitan")
                     continuation.resume(returning: result)
                 } catch {
                     print(error)

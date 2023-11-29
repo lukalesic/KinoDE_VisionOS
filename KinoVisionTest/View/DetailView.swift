@@ -9,13 +9,13 @@ import SwiftUI
 
 struct DetailView: View {
 
-    var movie: Movie
+    let repo = MoviesRepository()
+    var viewModel: MovieDetailsViewModel
 
     var body: some View {
         GeometryReader { reader in
             HStack {
-                
-                AsyncImage(url: URL(string: movie.posterURL)) { phase in
+                AsyncImage(url: URL(string: viewModel.selectedMovie.posterURL)) { phase in
                     phase.image?
                         .cornerRadius(10)
                         .shadow(radius: 15)
@@ -23,26 +23,22 @@ struct DetailView: View {
                     .padding(.leading, 50)
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text(movie.title)
+                    Text(viewModel.selectedMovie.title)
                         .font(.system(size: 54))
-                    Text(movie.genre.first ?? "Drama")
+                    Text(viewModel.selectedMovie.genre.first ?? "Drama")
                         .font(.system(size: 48))
                         .foregroundStyle(Color.init(white: 0.8))
+                    Text(viewModel.selectedMovie.summary ?? "no summary")
                     Spacer()
                 }
-
+                .onAppear {
+                    viewModel.getIndividualDetails()
+                }
                 .padding(.top, 44)
                 .padding(.horizontal, 24)
-
+                
                 Spacer()
             }
         }
     }
 }
-
-//#Preview {
-//    let title = "Superman"
-//    let picUrl = "https://d3sourxycqfpzg.cloudfront.net/production/tv_shows/posters/24652/small.jpg"
-//    let genres = "Drama, sci-fi, fantasy, comedy"
-//    return DetailView(title: title, pictureUrl: picUrl, genres: genres)
-//}

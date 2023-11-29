@@ -55,7 +55,7 @@ private extension MoviesView {
     func movieGrid() -> some View {
         LazyVGrid(columns: columns, content: {
             ForEach(viewModel.movies, id: \.title) { movie in
-                NavigationLink(destination: DetailView(movie: movie)) {
+                NavigationLink(destination: DetailView(viewModel: MovieDetailsViewModel(selectedMovie: movie))) {
                     VStack {
                         AsyncImage(url: URL(string: movie.posterURL)) { phase in
                             phase
