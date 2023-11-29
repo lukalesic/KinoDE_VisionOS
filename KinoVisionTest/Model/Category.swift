@@ -12,7 +12,7 @@ struct Category: Codable {
     let subtitleType: String
     let categoryOrder: Int?
     let results: [Movie]
-
+    
     enum CodingKeys: String, CodingKey {
         case next, type, title
         case posterSize = "poster_size"
@@ -22,29 +22,34 @@ struct Category: Codable {
     }
 }
 
-struct Movie: Codable {
-    let path: String
-    let itemType: ItemType
+struct Person: Codable {
     let id: Int
-    let originalTitle, title: String
-    let genre: [String]
-    let pgRating: Int?
-    let posterURL, photoURL: String
-    let stats: Stats
-    let ratings: Ratings
-
+    let name: String
+    let role: PersonRole
+    let photoUrl: String?
+    let order: Int?
+    let characterName: String?
+    
     enum CodingKeys: String, CodingKey {
-        case path
-        case itemType = "item_type"
-        case id
-        case originalTitle = "original_title"
-        case title, genre
-        case pgRating = "pg_rating"
-        case posterURL = "poster_url"
-        case photoURL = "photo_url"
-        case stats, ratings
+        case id, name, role, order
+        case photoUrl = "photo_url"
+        case characterName = "character_name"
     }
 }
+
+enum PersonRole: String, Codable {
+    case actorPerson = "actor"
+    case writer = "writer"
+    case producer = "producer"
+    case director = "director"
+    case creator = "creator"
+    
+    var stringValue: String {
+        return self.rawValue.capitalized
+    }
+}
+
+
 
 enum ItemType: String, Codable {
     case movie = "movie"
@@ -56,7 +61,7 @@ struct Ratings: Codable {
     let imdbID, imdbRating: String?
     let watchlistCount, starsCount: Int?
     let starsAverage: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case popularity
         case imdbID = "imdb_id"
@@ -69,7 +74,7 @@ struct Ratings: Codable {
 
 struct Stats: Codable {
     let premiereDate: String
-
+    
     enum CodingKeys: String, CodingKey {
         case premiereDate = "premiere_date"
     }

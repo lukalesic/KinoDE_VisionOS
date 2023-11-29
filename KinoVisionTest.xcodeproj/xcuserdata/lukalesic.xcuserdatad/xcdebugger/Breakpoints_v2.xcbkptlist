@@ -14,9 +14,9 @@
             filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "fetchData(for:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "fetchCategory(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -24,16 +24,334 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "36DC9DBD-DE9C-4C2F-AA41-762458D99BB0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "fetchData(for:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "fetchCategory(for:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "492828D4-3EB6-458C-B7F3-6AA0EC5C6E81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "filterCategory(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF223332-7B8B-4F41-9346-5A51746801F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "filterCategory(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2922EECB-49C3-4735-837E-D3926BAAB7E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getAllCategories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2922EECB-49C3-4735-837E-D3926BAAB7E7 - d0c78895d15803a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "2922EECB-49C3-4735-837E-D3926BAAB7E7 - 698bcb2c82d921c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AC201DA-C6DD-41E0-A1DD-34F2D090DD1D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getAllCategories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3AC201DA-C6DD-41E0-A1DD-34F2D090DD1D - d0c78895d15800ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "3AC201DA-C6DD-41E0-A1DD-34F2D090DD1D - 698bcb2c82d922ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "3AC201DA-C6DD-41E0-A1DD-34F2D090DD1D - d0c78895d15800e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "3AC201DA-C6DD-41E0-A1DD-34F2D090DD1D - 698bcb2c82d92288"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7154E1CC-C2C7-4934-A5D3-87EF793F210C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getAllCategories()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F599082-80BF-4EB8-BC1B-A7BEE9F49550"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/ViewModel/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getAllCategories()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F599082-80BF-4EB8-BC1B-A7BEE9F49550 - 2ded9a6d94c19b59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "4F599082-80BF-4EB8-BC1B-A7BEE9F49550 - 9faf0806b05e4e80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for KinoVisionTest.MoviesViewModel.getAllCategories() async -&gt; ()"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/ViewModel/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "fetchIndividualContent(for:id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED - a3534e56971cb951"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1132">
+               </Location>
+               <Location
+                  uuid = "2285D048-422B-4B36-8A9E-60F6FC15A1ED - a3534e56971cb951"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "624">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KinoVisionTest/Repo/MoviesRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "fetchIndividualContent(for:id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5 - a3534e56971cbad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2280">
+               </Location>
+               <Location
+                  uuid = "D900C452-4293-46BF-A3C4-8CBB4BC97DC5 - a3534e56971cbad5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;KinoVisionTest.Movie, Swift.Error&gt;) -&gt; () in KinoVisionTest.MoviesRepository.fetchIndividualContent(for: KinoVisionTest.MediaType, id: Swift.Int) async throws -&gt; KinoVisionTest.Movie"
+                  moduleName = "KinoVisionTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukalesic/Stroeer/KinoVisionOSTest/KinoVisionTest/Repo/MoviesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "2424">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
