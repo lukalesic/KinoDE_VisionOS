@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MoviesView: View {
     @Environment(MoviesViewModel.self) private var viewModel: MoviesViewModel
+    @Environment(\.openWindow) private var openWindow
     var columns: [GridItem] = [.init(.adaptive(minimum: 300), spacing: 20)]
     var dataType: DataType
     
