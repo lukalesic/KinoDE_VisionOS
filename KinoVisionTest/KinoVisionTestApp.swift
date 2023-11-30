@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct KinoVisionTestApp: App {
+    @State var navigationManager = NavigationManager()
     var body: some Scene {
         WindowGroup {
             ContentView()

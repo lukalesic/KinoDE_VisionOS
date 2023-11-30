@@ -30,6 +30,12 @@ struct DetailView: View {
                         .foregroundStyle(Color.init(white: 0.8))
                     Text(viewModel.selectedMovie.summary ?? "no summary")
                     Spacer()
+                    NavigationLink {
+                        VideoPlayerView()
+                    } label: {
+                        Text("Play")
+                    }
+                    Spacer()
                 }
                 .onAppear {
                     viewModel.getIndividualDetails()
